@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <i class="bx bxs-map"></i>
+        <input id="search-btn" type="text" placeholder="Введите город" />
+        <button class="bx bx-search"></button>
+      </div>
+      <div class="weather-box">
+        <div class="box">
+          <div class="info-weather">
+            <div class="weather">
+              <p class="temperature">
+                Температура: <span id="current-temp">0°C</span>
+              </p>
+              <p class="description">Погода: <span id="current-desc"></span></p>
+              <p class="guide">Совет: <span id="current-guide">--</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="date-and-time">
+        <select id="date"></select>
+        <select id="time"></select>
+      </div>
+      <div class="forecast-box">
+        <h3>Погода в будущем</h3>
+        <div class="forecast-info">
+          <p class="temperature">
+            Ожидаемая Температура: <span id="forecast-temp">--°C</span>
+          </p>
+          <p class="description">
+            Ожидаемая погода: <span id="forecast-desc">--</span>
+          </p>
+          <p class="guide">
+            Совет на будущее: <span id="forecast-guide">--</span>
+          </p>
+        </div>
+      </div>
+      <div class="not-found">
+        <div class="box">
+          <img src="images/404-new.png" alt="Not Found" />
+          <p>Город не найден!</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
